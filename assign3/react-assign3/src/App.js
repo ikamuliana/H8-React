@@ -1,11 +1,11 @@
 // import logo from './logo.svg';
 import './App.css';
-// import Card from './componets/card';
+import Card from './componets/card';
 import Form from './componets/form';
-import Backlog from './componets/backlog';
-import Evaluate from './componets/evaluate';
-import Inprogress from './componets/inprogress';
-import Done from './componets/done';
+// import Backlog from './componets/backlog';
+// import Evaluate from './componets/evaluate';
+// import Inprogress from './componets/inprogress';
+// import Done from './componets/done';
 
 
 function App() {
@@ -16,12 +16,12 @@ function App() {
         <hr />
         <Form />
         <br />
-        <Backlog />
+        {/* <Backlog />
         <Inprogress />
         <Evaluate />
-        <Done />
+        <Done /> */}
 
-        {/* <Card /> */}
+        <Card />
       </div>
     </div>
   );
