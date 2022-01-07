@@ -1,13 +1,12 @@
 import { useDispatch, useSelector } from "react-redux"
 
-const Backlog = () => {
+const Card = () => {
   // const [kanban, setKanban] = useState([])
   const dispatch = useDispatch();
   const kanban =useSelector(({kanban}) => kanban)
 
   return (
     <div className="row row-cols-1 row-cols-md-4 g-4">
-      {JSON.stringify(kanban)}
       <div className="col">
         <div className="card border-dark mb-3">
           <div className="card-header">Backlog</div>
@@ -49,8 +48,9 @@ const Backlog = () => {
             </div>
         </div>
       </div>
+      {JSON.stringify(kanban)}
     </div>
   )
 }
 
-export default Backlog
+export default Card
